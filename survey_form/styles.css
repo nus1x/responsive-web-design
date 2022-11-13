@@ -4,6 +4,12 @@ body {
   font-family: Monospace;
 }
 
+input, select, textarea {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 hr {
   height: 3px;
   background: rgb(127,80,255);
@@ -12,11 +18,16 @@ hr {
   margin-bottom: 20px;
 }
 
+::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
 .survey-form {
   text-align: center;
   margin: 1em auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: auto;
   padding: 20px;
   min-width: 300px;
@@ -29,28 +40,43 @@ hr {
 .survey-form label {
   display: block;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .survey-form input {
   width: 100%;
-  min-height: 2.5em;
+  min-height: 3em;
   background: rgba(0,0,0,0.3);
   border: 1px solid rgb(127,80,255);
   color: #fff;
   margin-top: 5px;
   text-indent: 5px;
   border-radius: 5px;
+  font-family: Consolas;
+}
+
+.survey-form input:hover,input:active,input:focus {
+  border: 1px solid white;
+  outline: 1px solid white;
 }
 
 .survey-form select {
-  width: 102%;
-  min-height: 2.5em;
+  width: 100%;
+  text-indent: 5px;
+  min-height: 3em;
   background: rgba(0,0,0,0.3);
   border: 1px solid rgb(127,80,255);
   color: #fff;
   margin-top: 5px;
   border-radius: 5px;
+  font-family: Consolas;
+  
+}
+
+.survey-form select:hover,select:active,select:focus {
+  border: 1px solid white;
+  outline: 1px solid white;
 }
 
 .survey-form textarea {
@@ -59,16 +85,34 @@ hr {
   background: rgba(0,0,0,0.3);
   border: 1px solid rgb(127,80,255);
   border-radius: 5px;
+  color: #fff;
+  line-height: 2em;
+  text-indent: 5px;
+  font-family: Consolas;
+}
+
+.survey-form textarea:hover,textarea:active,textarea:focus {
+  border: 1px solid white;
+  outline: 1px solid white;
 }
 
 .survey-form input[type=submit] {
-  margin-bottom: 30px;
   height: 40px;
   border-radius: 5px;
+  font-family: Consolas;
+  margin-bottom: 25px;
+  background: rgb(127,80,255);
+}
+
+.survey-form input[type=submit]:active, input[type=submit]:focus,input[type=submit]:hover {
+  border: 1px solid rgba(0,0,0,0.3);
+  outline: 1px solid rgba(0,0,0,0.3);
 }
 
 .survey-form p {
   font-size: 0.7rem;
+  font-style: italic;
+  font-family: Monospace;
 }
 
 .survey-form h1 {
