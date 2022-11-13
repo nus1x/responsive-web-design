@@ -2,6 +2,7 @@ body {
   background: rgb(127,80,255);
   color: #fff;
   font-family: Monospace;
+  font-size: 14px;
 }
 
 input, select, textarea {
@@ -89,6 +90,15 @@ hr {
   line-height: 2em;
   text-indent: 5px;
   font-family: Consolas;
+  resize: none;
+}
+
+@media(min-width: 768px) {
+  .survey-form {
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .survey-form textarea:hover,textarea:active,textarea:focus {
