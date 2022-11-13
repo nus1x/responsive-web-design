@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+      <div class="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Made Using Pure HTML & CSS by Rommy Maulana</p>
+        
+        <hr/>
+        
+        <form id="survey-form">
+          
+        <label for="name">
+          Name
+          <input id="name" name="name" type="text" placeholder="Enter your Name" required>
+        </label>
+        
+        <label for="email">
+          Email
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </label>
+          
+        <label for="number">
+          Age (optional)
+          <input id="number" name="age" type="number" placeholder="Age" min="3" max="120">
+        </label>
+        
+        <label for="dropdown">
+          What is your favorite movie?
+          <select id="dropdown" name="gender">
+            <option value="0">Select a movie</option>
+            <option value="1">The Avengers</option>
+            <option value="2">Black Addam</option>
+          </select>
+        </label>
+        
+        <label for="bio">
+          Bio
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Please tell us about yourself..."></textarea>
+        </label>
+        
+        <hr>
+        
+        <input type="submit" id="submit" value="Submit" name="submit">
+        
+        </form>
+      </div>
+    </body>
+    
+</html>
