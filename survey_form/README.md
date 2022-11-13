@@ -1,1 +1,1 @@
-<img src="ss.jpg">
+HTML Survey Form
